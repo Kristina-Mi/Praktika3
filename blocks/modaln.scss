@@ -1,0 +1,160 @@
+/*.modal_windows1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 0.3vw;
+	justify-content: center;
+    margin: 0 3vw; 
+}*/
+
+.modal-open__img1 {
+	width: 100%;
+    height: auto;
+}
+
+.descr1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5vh;
+    position: absolute;
+    top: 50%;
+    padding: 1vw 4.2vw;
+}
+
+.descr1 p:first-child{
+    font-size: 1.1vw;
+    color: #FC8A06;
+    font-weight: 500;
+}
+
+.descr1 p:nth-child(2){
+    font-size: 2vw;
+    color: white;
+    font-weight: 700;
+}
+
+.modal-open1 {
+	/*width: 50%;*/
+	margin: 3vh auto;
+	/*padding: 15px;*/
+    position: relative;
+    z-index: 100;
+}
+
+/*.modal-open__descr {
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 25px;
+}*/
+#open-modal__btn1 {
+	display: block;
+	margin: 1vh 0;
+    border: none;
+	background-color: #FC8A06;
+	color: #fff;
+	padding: 1vh 3vw;
+	border-radius: 2vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+#open-modal__btn1:hover {
+	cursor: pointer;
+    border: 1px solid #FC8A06;
+	background-color: #ffffff;
+    color: #FC8A06;
+}
+.modal1 {
+	/*  */
+	display: none;
+	/*  */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal_active1 {
+	display: block;
+}
+.modal__content1 {
+	width: 80%;
+	max-width: 700px;
+	margin: 100px auto;
+	box-shadow: 1px 1px 10px #777777;
+	padding: 35px;
+	background-color: #fff;
+	/* Для анимации */
+	position: relative;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+.modal__close1,
+.modal__closeBtn1 {
+	font-size: 40px;
+	color: #777777;
+	cursor: pointer;
+	float: right;
+}
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width:  376px) and (max-width: 769px){
+
+	.descr1{
+		row-gap: 0.2vw;
+		top: 45%;
+	}
+
+	.descr1 p:first-child{
+		font-size: 1.3vw;
+	}
+	
+	.descr1 p:nth-child(2){
+		font-size: 2.1vw;
+	}
+
+	#open-modal__btn1 {
+		padding: 1vw 3vw;
+		font-size: 1.2vw;
+	}
+
+}
+
+@media screen and (max-width: 376px){
+
+	.descr1{
+		top: 50%;
+		padding: 1vw 4.2vw;
+		row-gap: 0.2vw;
+		top: 45%;
+	}
+
+	.descr1 p:first-child{
+		font-size: calc(10px + 1vw);
+	}
+	
+	.descr1 p:nth-child(2){
+		font-size: calc(16px + 2vw);
+	}
+
+	#open-modal__btn1 {
+		margin: 0;
+		padding: 2vw 7vw;
+		font-size: calc(8px + 1vw);
+		border-radius: 30px;
+	}
+
+}

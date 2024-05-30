@@ -1,0 +1,61 @@
+@media screen and (max-width: 376px) {
+  img[alt=advert] {
+    display: none;
+  }
+  .banner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vw;
+    background-color: #EEEEEE;
+    border-radius: 12px;
+    padding: 10vw 5vw 0 3vw;
+  }
+  .banner2_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner2_item:first-child img {
+    width: 30%;
+    height: auto;
+    padding-bottom: 1vw;
+  }
+  .banner2_item:first-child {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .banner2_item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw 0 3vw 0;
+  }
+  .banner2_item1 img[alt=appstore] {
+    width: 40%;
+    height: auto;
+  }
+  .banner2_item1 img[alt=googleplay] {
+    width: 40%;
+    height: auto;
+  }
+  img[alt=friends] {
+    width: 90%;
+    height: auto;
+  }
+  .banner2_items1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 2vw;
+  }
+  .banner2_p {
+    color: #FC8A06;
+    text-decoration: underline;
+  }
+  .banner2_items2 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

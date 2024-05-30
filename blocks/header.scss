@@ -1,0 +1,119 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(8px + 0.5vw);
+    font-weight: 500;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    background-color: #FAFAFA;
+    margin: 0 3vw;
+}
+
+.head_item1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2vh 1vw;
+    column-gap: 1vw;
+}
+
+.click1{
+    color: #FC8A06;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.click2{
+    color: #FC8A06;
+    text-decoration: underline;
+}
+
+.head_item2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    background-color: #028643;
+}
+
+.head_item2 img:first-child{
+    padding: 1vw;
+    border-right: 1px solid #FFFFFF;
+}
+
+.head_item2 img:last-child{
+    padding: 1vw;
+    border-left: 1px solid #FFFFFF;
+}
+
+.head_item2 p{
+    color: white;
+    font-weight: 600;
+    font-size: calc(9px + 0.5vw);
+    padding: 1vw;
+}
+
+.head_item2 p:nth-child(2){
+    border-right: 1px solid #FFFFFF;
+}
+
+@media screen and (min-width:  769px) and (max-width: 1025px){
+    header{
+        font-size: calc(6px + 0.5vw);
+    }
+
+    header img{
+        width: 2vw;
+        height: auto
+    }
+    
+    .head_item2 img:first-child{
+        width: 3vw;
+        height: auto
+    }
+    
+    .head_item2 img:last-child{
+        width: 3vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:  376px) and (max-width: 769px){
+
+    header{
+        font-size: calc(4px + 0.3vw);
+    }
+
+    header img{
+        width: 2vw;
+        height: auto
+    }
+
+    .head_item1{
+        margin: 1vw 1vw;
+    }
+    
+    .head_item2 img:first-child{
+        width: 3vw;
+        height: auto
+    }
+    
+    .head_item2 img:last-child{
+        width: 3vw;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+
+    header{
+        display: none;
+    }
+
+}

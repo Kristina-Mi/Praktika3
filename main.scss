@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+  }
+    
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.banner2{
+  display: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "blocks/header.scss"; 
+@import "blocks/underheader.scss"; 
+@import "blocks/banner.scss"; 
+@import "blocks/filter.scss"; 
+@import "blocks/slider.scss"; 
+@import "blocks/slider1.scss"; 
+@import "blocks/modal.scss"; 
+@import "blocks/modaln.scss"; 
+@import "blocks/tab.scss"; 
+@import "blocks/accordeon.scss";
+@import "blocks/end.scss";
+@import "blocks/footer.scss";
+@import "blocks/banner2.scss";    
+@import "blocks/banner3.scss";    
